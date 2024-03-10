@@ -9,6 +9,10 @@ export default function Form({ setInfo, setState }) {
     setPlaceHolder("");
   };
 
+  const reload = () => {
+    window.location.reload();
+  };
+
   const handleChange = async () => {
     const api = "def627ce3ca2bba78d919b77cb75eb1f";
     const baseURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric&lang=tr`;
@@ -36,6 +40,9 @@ export default function Form({ setInfo, setState }) {
         <div className="btnDiv">
           <button type="submit" className="btn">
             Verileri Getir
+          </button>
+          <button type="submit" className="btn" onClick={reload}>
+            Verileri Temizle
           </button>
         </div>
       </form>

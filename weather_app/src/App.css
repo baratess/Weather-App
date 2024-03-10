@@ -58,7 +58,7 @@ h1 {
   outline: none;
   padding: 10px;
   text-align: center;
-  color: whitesmoke;
+  color: rgb(255, 255, 255);
   background-color: rgba(240, 248, 255, 0);
   font-size: 1.4rem;
   border-bottom: 3px solid rgb(245, 172, 36);
